@@ -1,0 +1,31 @@
+
+monkeyrunner 安装配置教程
+
+安装JDK，配置环境变量 D:\JAVA\jdk-8u144-windows-x64.exe
+安装SDK，配置环境变量 D:\JAVA\android-sdk_r24.4.1-windows.zip
+运行SDK，安装配置
+安装eclipse D:\JAVA\eclipse-inst-win64.exe
+eclipse中下载ADT
+
+新建monkey_record.py   C:\Users\Administrator\Desktop\test\phone\monkey_record.py
+新建monkey_playback.py C:\Users\Administrator\Desktop\test\phone\monkey_playback.py
+
+
+
+monkeyrunner录制与回放(录制与播放不能同时运行)
+
+录制脚本: monkeyrunner monkey_record.py
+
+播放脚本: monkeyrunner monkey_playback.py filename  
+
+
+monkeyrunner编写脚本
+
+
+
+使用hierarchyviewer获取控件ID
+进入安卓sdk目录，tools目录 双击 运行hierarchyviewer.bat文件
+    启动失败时，查看5037端口是否被占用
+    shell命令：netstat -aon|findstr 5037
+
+
